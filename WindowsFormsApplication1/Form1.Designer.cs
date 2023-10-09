@@ -88,8 +88,9 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.documentViewer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Report1 ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

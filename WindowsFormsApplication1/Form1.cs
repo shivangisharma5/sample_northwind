@@ -31,16 +31,23 @@ namespace WindowsFormsApplication1
         {
             if (radioButton2.Checked)
             {
+                Text = "Report 2";
                 var report = new XtraReport2();
                 documentViewer1.DocumentSource = report;
                 documentViewer1.InitiateDocumentCreation();
             }
             else if (radioButton1.Checked)
             {
+                Text = "Report 1";
                 var report = new XtraReport1();
                 documentViewer1.DocumentSource = report;
                 documentViewer1.InitiateDocumentCreation();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
